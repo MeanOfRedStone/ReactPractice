@@ -23,15 +23,14 @@ import star from "../image/Star 1.png";
 
 export default function Card() {
     return (
-        <section className='card'>
+        <div className='card'>
             <img src={image12} className='card--photo'/>
-            <div>
-                <div>
-                    <img src={star} className='card--icon' />
-                    <span>5.0</span> <span>(6) · USA</span>
-                </div>
-                <div>Life lessons with Katie Zaferes</div>
+            <div className='card--stats'>
+                <img src={star} className='card--icon' />
+                <span className='gray'>5.0</span> <span className='gray'>(6) · USA</span>
             </div>
-        </section>
+            <p>Life lessons with Katie Zaferes</p>
+            <p><span className='bold'>From $136</span> / person</p> 
+        </div>
     )
 }
